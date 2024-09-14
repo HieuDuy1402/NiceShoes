@@ -1,0 +1,61 @@
+﻿@model NiceShoesWeb.Context_DB.SanPham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <h2>Details</h2>
+
+    <div>
+        <h4>SanPham</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.IdSP)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdSP)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TenSP)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TenSP)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AnhSP)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AnhSP)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GiaSP)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GiaSP)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IdThuongHieu)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdThuongHieu)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+<!-- /.content-wrapper -->
